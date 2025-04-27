@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.barras{display: none;}
+.desplegable{background: #00a2ff;}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    padding: 10px;
+    list-style: none;
+}
+ul li a{  color: cyan;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+}
+nav ul li:hover{background: #ff5722; }
+@media (max-width: 850px) {
+.barras{
+    background-color: greenyellow;
+    display: block;
+}
+.desplegable{
+    background: none;
+    transform: translate(-100%);
+    transition: 0.5s;
+    font-size: 1.5rem;
+    width: 50%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+a{
+    padding: 0;
+}
+a{
+    font-size: 1.5rem;
+    padding: 20px 0px 20px 20px;
+    display: block;
+    text-align: center;
+}
+.boton_menu{
+    background-image: url(download\ \(1\).png);
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+}
+button{
+    margin: 5px;
+    border: none;
+    margin: 10px 10px 10px 10px;
+}
+.abrir_menu{
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(2px);
+    transform: translate(0%);
+    width: 50%;
+    transition: 0.5s;
+}
+.colocar_x{
+    background-image: url(las/download\ \(1\).png);
+    background-color: #1e1e1e;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+}
+@media (max-width: 500px){
+    .desplegable{
+        width: 100%;
+        height: 100vh;
+        font-size: 1.6rem;
+    }
+}
+}
+
+.titulo{
+    color: rgb(15, 223, 78);
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .product-card h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .product-card .price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #0a74da;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    background-color: #e3f2fd;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    margin-bottom: 10px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+header nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  .contacto {
+    background: #fff;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .contacto h2 {
+    margin-bottom: 1rem;
+    color: #0a3d62;
+  }
+  
+  .contacto p {
+    margin-bottom: 2rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #0a3d62;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  form button:hover {
+    background-color: #074078;
+  }
