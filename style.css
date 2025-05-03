@@ -93,6 +93,18 @@ button{
     }
 }
 }
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.content {
+  padding: 40px 20px;
+  text-align: center;
+}
+.content h2 {
+  color: #0a0f3d;
+  margin-bottom: 20px;
+}
 
 .titulo{
     color: rgb(15, 223, 78);
