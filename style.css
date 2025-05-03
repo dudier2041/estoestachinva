@@ -105,7 +105,12 @@ button{
   color: white;
   margin-bottom: 20px;
 }
-
+h1{
+  color: #fff;
+}
+p{
+  color: #fff;
+}
 .titulo{
     color: rgb(15, 223, 78);
 }
