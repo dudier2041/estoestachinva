@@ -45,7 +45,7 @@ nav ul li:hover{background: #ff5722; }
 ul{
     display: flex;
     flex-direction: column;
-    height: 25vh;
+    height: 30vh;
 }
 a{
     padding: 0;
@@ -89,7 +89,7 @@ button{
 @media (max-width: 500px){
     .desplegable{
         width:100%;
-        height: 75vh;
+        height: 80vh;
         font-size: 1.6rem;
     }
 }
