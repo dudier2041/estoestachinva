@@ -16,11 +16,11 @@ body{
 .barras{display: none;}
 .desplegable{background: #00a2ff;}
 ul{
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
 }
 ul li{
-    padding: 5px;
+    padding: 10px;
     list-style: none;
 }
 ul li a{  color: cyan;
@@ -31,34 +31,34 @@ ul li a{  color: cyan;
 nav ul li:hover{background: #ff5722; }
 @media (max-width: 768px) {
 .barras{
-    background-color: rgb(0, 255, 0);
-    display:flex;
+    background-color: greenyellow;
+    display: block;
 }
 .desplegable{
-    background:none;
+    background: none;
     transform: translate(-100%);
     transition: 0.5s;
-    font-size: 1rem;
-    width: 95%;
-    height: 25%;
+    font-size: 2rem;
+    width: 90%;
+    margin: 10px auto;
 }
 ul{
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     height: 50vh;
 }
 a{
     padding: 0;
 }
 a{
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 15px 0px 15px 15px;
-    display:flow-root;
+    display: block;
     text-align: center;
 }
 .boton_menu{
     background-image: url(download\ \(1\).png);
-    background-color: black;
+    background-color: white;
     background-repeat: no-repeat;
     height: 30px;
     width: 30px;
@@ -71,8 +71,8 @@ button{
     margin: 10px 10px 10px 10px;
 }
 .abrir_menu{
-    background:#e3f;
-    backdrop-filter:blur(2px);
+    background: rgba(255, 0, 242, 0.473);
+    backdrop-filter: blur(2px);
     transform: translate(0%);
     width: 100%;
     transition: 0.5s;
@@ -88,13 +88,20 @@ button{
 }
 @media (max-width: 500px){
     .desplegable{
-        width: 95%;
-        height: 50%;
-        height: 45vh;
-        font-size:1.5rem;
+        width:100%;
+        height: 15vh;
+        font-size: 1.6rem;
     }
 }
-
+.texto-visible {
+  position:absolute;
+  z-index: 4; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+}
 .hero h1 {
   font-size: 3em;
   margin-bottom: 20px;
@@ -117,7 +124,7 @@ h2{
   color: #ff0e0e;
 }
 .titulo{
-    color: rgb(0, 255, 0);
+    color: rgb(15, 223, 78);
 }
 .gallery {
     display: grid;
@@ -284,4 +291,3 @@ header nav a {
   form button:hover {
     background-color: #074078;
   }
-}
